@@ -1,0 +1,201 @@
+*{
+  scroll-behavior: smooth;
+}
+
+
+/*=========================================================*/
+/*=========================================================*/
+/*=========================================================*/
+/*=========================================================*/
+/*Sección de productos*/
+.seccion__producto{
+    margin: 20px;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+
+
+}
+
+
+.productos__container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.productos__titulo{
+    margin-top: 30px;
+    font-size: 2rem;
+    text-align: center;
+    color:#a27b4b98;
+    text-shadow: 0px 2px 3px #a27b4b98;
+
+    animation: bounce 2s ease-in-out infinite; /* 2s es la duración de la animación */
+    animation-delay: 2s; /* 5 segundos de retraso antes de la primera animación */
+}
+
+
+.producto {
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: #fff;
+    --main-color: #323232;
+    --main-focus: #31B404;
+
+    max-width: 330px;
+    max-height: 500px;
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 10px;
+    
+  }
+  
+  .producto:last-child {
+    justify-content: flex-end;
+  }
+  
+  .producto__img__container {
+      /* clear and add new css */
+    width: 80%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin: auto;
+    
+  }
+  .producto__img__container > img {
+   /* delete */
+   width: 100%;
+   height: 100%;
+
+   object-fit: cover;
+   display: block;
+  }
+  
+
+  
+  .producto__titulo {
+
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .producto__titulo__info{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color:#FF8000;
+    text-shadow: 0px 2px 3px #FF8000;
+  }
+
+  
+  .producto__descripcion {
+    text-align: justify;
+  }
+
+  .producto__descripcion__info{
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: var(--font-color-sub);
+  }
+
+  
+  .producto__divider {
+    width: 100%;
+    border: 1px solid #FF8000;
+    border-radius: 50px;
+    
+  }
+  
+  .producto__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .producto__precio {
+    font-size: 1rem;
+    font-weight: 500;
+    
+  }
+
+  .producto__precio__info{
+    color:#045FB4;
+
+    text-shadow: 0px 2px 3px #045FB4;
+  }
+  
+  .producto__precio__info span {
+    font-size: 1rem;
+    font-weight: 500;
+    color:#045FB4;
+
+    text-shadow: 0px 2px 3px #045FB4;
+  }
+  
+  .btn__añadir__producto {
+    height: 35px;
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    padding: 0 15px;
+    transition: all 0.3s;
+    cursor: pointer;
+    display: inline-block;
+    
+  }
+  
+  .btn__añadir__producto svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--main-color);
+    transition: all 0.3s;
+    padding: 0 15px;
+    
+  }
+  
+  .producto__img__container:hover {
+    transform: translateY(-3px);
+  }
+  
+  .btn__añadir__producto:hover {
+    border: 2px solid var(--main-focus);
+}
+
+.btn__añadir__producto:hover svg {
+    fill: var(--main-focus);
+}
+
+.btn__añadir__producto:active {
+    transform: translateY(3px);
+}  
+
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+
+/* Animación de rebote */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/

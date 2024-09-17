@@ -1,0 +1,532 @@
+*{
+    scroll-behavior: smooth;
+}
+
+/*Sección de variables*/
+:root{
+    --background: linear-gradient(135deg, #e4e4537e 0%, #a27b4b98 100%);
+    --hover:  #eaa245d2;
+    --bold__info : #FF5733;
+}
+
+
+.titulos_subtitulos{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.textos{
+    font-family: 'Tektur', cursive;
+}
+
+.descripcionCarrito{
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/*COMENZAMOS POR EL HEADER*/
+
+/*=========================*/
+/*Carrito de compras*/
+.header__carrito__container{
+    margin-right: auto;
+}
+
+.header__carrito__container{
+    list-style: none;
+}
+
+.header__carrito{
+    margin-right: auto;
+    
+  }
+
+.header__sub__Menu{
+    position: relative;
+}
+
+.header__sub__Menu{
+    max-width: 100%;
+}
+
+.header__sub__Menu .header__carrito__tabla{
+    display: none;
+}
+
+
+
+
+.header__sub__Menu:hover
+.header__carrito__tabla{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+    background: #FAFAFA;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 800px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+
+
+
+.lista__carrito{
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+
+    margin: 0;
+}
+
+.carrito__encabezado{
+    font-size: 1rem;
+    padding: 15px;
+    color: #000;
+    margin: 0;
+}
+
+.carriro__divider{
+    margin: 0;
+    
+}
+
+.carrito__pagoTotal{
+    color: #FF8000;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.carrito__btns__container{
+    text-align: center;
+}
+
+.carrito__btn__pagar , .carrito__btn__limpiar__carrito{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.6rem;
+    margin: 5px 15px;
+    min-width:  400px;
+    color: #fff;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.carrito__btn__pagar {
+    text-align: center;
+    background: #01DF01;
+}
+
+.carrito__btn__limpiar__carrito{
+    background: #DF0101;
+    text-align: center;
+   
+}
+
+
+.img__carritoHTML{
+    width: 30%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin: auto;
+}
+
+
+
+
+
+/*========================*/  
+/*========================*/  
+
+
+
+
+
+
+
+
+
+
+
+/*-----NAV-----*/
+.header__container{
+    color:#fff;
+    height: 100px;
+    background: rgb(2,0,36);
+    padding: 0px 15px;
+    /*Alineamos los elementos en una sola línea*/
+    display: flex;
+
+    /*Damos separación entre elementos en el eje x*/
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.header__logo__container{
+    text-align: justify;
+    max-width: 100%;
+}
+
+.header__logo{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    text-shadow: 0px 2px 3px #fff;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.header__icon__picture{
+    text-align: center;
+    max-width: 48px;
+    margin-left: 10px;
+}
+
+
+
+
+
+.nav a{
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+/*Mostramos y ocultamos el menú de nuestra nav. */
+.mostrar-menu,
+.ocultar-menu{
+    
+    font-size: 2.5rem; /*40px*/
+    cursor: pointer;
+
+    /*Ocultamos los íconos del meú responsive*/
+    display: none;
+    transition: 0.4s;    
+}
+
+/*--------Damos una peña animación a (.menu a, .show-nav , hide-nav)----------*/
+.nav a:hover,
+.mostrar-menu:hover,
+.ocultar-menu:hover{
+    background: var(--hover);
+    border-radius: 8px;
+}
+
+/*------Movemos al final nuestras barras de nav cuando sea responsive--*/
+.ocultar-menu{
+    order:1;
+}
+/*Ocultamos el cuadro del input (#check)*/
+#check{
+    display: none;
+}
+
+/*--------------Infor del header-------*/
+#header__container__texts{
+    max-width: 100%;
+    padding: 0px 15px;    
+    background-image: var(--background),url(../img/Portada1-img.png);
+    height: 70vh;
+    /* background-position: left center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    background-position: right center;
+    background-attachment: fixed;
+ 
+
+    position: relative;
+    
+}
+
+.header__info{
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.header__titulo{
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: 0px 2px 3px #fff;
+}
+
+.header__subtitulo{
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+
+}
+
+.header__wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+
+
+
+
+
+
+/*==========================================================*/
+/*==========================================================*/
+/*-------------------------FOOTER---------------------------*/
+.footer{
+    background: rgb(2,0,36);
+    color: #fff;
+    max-width: 100%;
+    padding: 20px 20px;
+}
+
+.footer__container{
+    max-width:100%;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+
+
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr) ;
+    grid-gap: 10px;
+
+    justify-content: center; /*Horizontal x*/
+    align-items: center; /*Vertical y */
+    
+}
+
+
+.footer__icons__container{
+    margin: 10px;
+    padding: 10px;
+    grid-column: 1/2;
+    max-width: 100%;
+}
+
+.footer__icons__titulo{
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0px 1px 2px #fff;
+
+
+}
+
+.footer__icon__item{
+    margin: 10px;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 10px;
+
+    transition: 0.4s;
+    border-radius: 30px;
+
+}
+
+.footer__info__container{
+    margin: 10px;
+    padding: 10px;
+    grid-column: 2/-1;
+}
+
+.footer__info__titulo{
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0px 1px 2px #fff;
+
+}
+
+.footer__info__links{
+    text-align: center;
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.footer__info__links__container{
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.footer__info__links ul{
+    list-style: none;
+}
+
+.footer__info__container a{
+    
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+.footer__info__container a:hover, 
+.footer__icon__item:hover{
+    background: var(--hover);
+    border-radius: 8px;
+}
+
+
+
+
+/*===============================================*/
+/*===============================================*/
+/*===============================================*/
+/*===============================================*/
+/*===============================================*/
+/*===============================================*/
+/*===============================================*/
+/*-------RESPONSIVE----------*/
+@media screen and (max-width: 1005px){
+    
+    /*Barra de navegación*/
+    .mostrar-menu, 
+    .ocultar-menu{
+        display: block;
+        font-size: 60px;
+        
+    }
+
+    .mostrar-menu{
+     
+        margin-left: auto;
+    }
+    
+
+    .nav{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(2,0,36);
+
+
+
+        /*Hacemos que aparezca el menú*/
+        right: -100%;
+        top: 0;
+
+        text-align: center;
+        padding: 85px;
+        z-index: 100;
+        transition: 0.8s;
+
+    }
+
+    /*Aajustamos los enlaces del menú*/
+    .nav a{
+        display: block;
+        padding: 15px;
+    }
+
+    /*Movrmos el símbolo de x arriba a la dedrecha*/
+    .ocultar-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        font-size:3.75rem;
+    }
+
+    /*Comprobamos la activición del check para mostrar y ocultar el menu a través del check*/
+    #check:checked ~  .nav-container  .nav{
+        right: 0;
+    }
+
+
+
+
+
+    /*===========================================*/
+    /*===========================================*/
+    /*===========================================*/
+    /*----------FOOTER------------------*/
+    .footer__icons__container{
+        grid-row: 1/2;
+        grid-column: 1/-1;
+        max-width: 100%;
+    }    
+
+    .footer__info__container{
+        grid-row: 2/3;
+        grid-column: 1/-1;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    /*====================================*/
+    /*====================================================*/
+    /*----------Footer-------------*/   
+    .leyenda{
+        font-size: 0.9rem;
+    }
+
+    .footer__info__links__container{
+        flex-direction: column;
+        
+    }
+    .footer__info__container ul li{
+    
+        margin: 15px 0;
+
+    }
+    
+}
+
+@media screen and (max-width:400px){
+    
+    /*====================================================*/
+    /*====================================================*/
+    /*====================================================*/
+    /*====================================================*/
+    /*----------Footer-------------*/   
+    .leyenda{
+        font-size: 0.9rem;
+    }
+
+    .footer__info__links__container{
+        flex-direction: column;
+        
+    }
+    .footer__info__container ul li{
+    
+        margin: 15px 0;
+
+    }
+
+
+}
+
+
+
+
+

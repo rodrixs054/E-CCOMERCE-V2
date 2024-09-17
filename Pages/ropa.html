@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!--Importamos nuestros estilos-->
+            <link rel="stylesheet" href="../styles/normalize1.css">
+            <link rel="stylesheet" href="../styles/header__footer.css">
+        
+            <!--Estilos para las card de los productos -->
+            <link rel="stylesheet" href="../styles/contenedor__cards.css">
+
+
+            
+            <link rel="shortcut icon" href="../icons/Seccion-ropa.ico" type="image/x-icon">
+        
+            <!--Importamos una estilo de fuente-->
+            <!--Estilo de fuente 1-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        
+        
+            <!--Estilo de fuente 2-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+
+    <title>Ropa de Pokémon</title>
+</head>
+<body>
+    
+
+    <header class="header header-img">
+
+        <div class="header__container">
+                <!--Nustra barra de navegación (logo)-->
+            <div class="header__logo__container">
+                <img src="../icons/pikachu2.ico" alt="" class="header__icon__picture">
+                <a href="#" id="icon-bar" class="header__logo titulos_subtitulos">  Mundo Pokémon </a>
+            </div>
+            
+
+            <ul class="header__carrito__container">
+                <li class="header__sub__Menu">
+                    
+
+                    <!--Nuestro carrito de compras-->
+                    <div class="header__carrito">
+                        <img src="../icons/Bolso de compras.ico" alt="" class="header__carrito__picture" id="logo__carrito">
+                    </div>
+
+
+
+                    <div class="header__carrito__tabla">
+                        <table class="lista__carrito">
+                            <thead>
+        
+                                <tr>
+                                    <th class="carrito__encabezado titulos_subtitulos"> <span>Imagen</span></th>
+                                    <th class="carrito__encabezado titulos_subtitulos"> <span>Producto</span> </th>
+                                    <th class="carrito__encabezado titulos_subtitulos"> <span>Precio</span> </th>
+                                    <th class="carrito__encabezado titulos_subtitulos"> <span>Cantidad</span> </th>
+        
+                                    <th class="carrito__encabezado titulos_subtitulos"> <span>Total</span> </th>
+                                    
+                                </tr>
+        
+                            </thead>
+                            
+                                <tbody></tbody>
+        
+                        </table>
+                        
+                        <!--Mostramos el pago total a pagar-->
+                        <hr class="carriro__divider">
+                        <h6 class="carrito__pagoTotal titulos_subtitulos">Añade productos a tu carrito de compra</h6>
+
+                        <div class="carrito__btns__container">
+                                                        <!--Botones para vaciar carrito y pagar total-->
+                            <hr class="carriro__divider">
+                            <a href="#" class="carrito__btn__pagar titulos_subtitulos">Proceder a pagar</a>
+
+                            <hr class="carriro__divider">
+                            <a href="" class="carrito__btn__limpiar__carrito titulos_subtitulos">Vaciar carrito</a>
+
+                        </div>
+
+                </div>
+
+                </li>
+
+
+            </ul>
+
+
+            <input type="checkbox"  id="check">
+            <label for="check" class="mostrar-menu">&#8801</label>
+
+
+
+            <!--Barra de navegación-->
+            <div class="nav-container">
+
+                <nav class="nav">
+                    <a href="../Pages/index.html" class="nav__items nav__items--cta textos" target="_blank">Inicio</a>
+                    <a href="../Pages/peluches.html" class="nav__items textos" target="_blank">Peluches</a>
+                    <a href="../Pages/ropa.html" class="nav__items textos" target="_blank">Ropa</a>
+                    <a href="../Pages/juegos.html" class="nav__items textos" target="_blank">Video Juegos</a>
+                    <a href="../Pages/especiales.html" class="nav__items textos" target="_blank">Especiales</a>
+
+
+                    <label for="check" class="ocultar-menu">&#215</label>
+                </nav>
+            </div>
+
+            
+
+        </div>
+
+
+        
+        <section id="header__container__texts">
+
+            <div class="header__info">
+
+                <h1 class="titulos_subtitulos header__titulo">Sección de ropa Pokémon</h1>
+
+                <h2 class="header__subtitulo header__texto header__sub textos">Arma tu estilo único y destaca en el campo de batalla.</h2>
+
+            </div>
+
+
+            <!--Contenedor del wave---------------------->
+            <div  class="header__wave" style="overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                        style="stroke: none; fill: #fff;">
+                    </path></svg>
+            </div>
+
+        </section>
+
+
+
+    </header>
+
+    <main class="seccion__producto">
+
+        <h1 class="productos__titulo titulos_subtitulos">Explora tus prendas Pokémon favoritas</h1>
+
+        <section class="productos__container"> <!--Flex-->
+
+
+            <div class="producto">
+
+                <div class="producto__img__container">
+                    
+                    <div class="producto__img">
+                        <img src="../img/Secciones de productos/vestimenta/Prenda1.jpeg" alt="" class="producto__picture">
+                    </div>
+                
+                </div>
+
+                <div class="producto__titulo titulos_subtitulos">  <h4 class="producto__titulo__info">Sudadera de Pokebola</h4> </div>
+
+                <div class="producto__descripcion textos">   <p class="producto__descripcion__info">Peluche de Pikachu original de alta calidad con certificado de auntenticidad. 32x32cm</p></div>
+
+                <hr class="producto__divider">
+
+                <div class="producto__footer">
+
+                    <div class="producto__precio titulos_subtitulos">  <p class="producto__precio__info"> <span>$ 123.45 </span></p> </div>
+
+                    <a class="btn__añadir__producto add" data-id="11">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                    </a>
+
+                </div>
+            </div>
+
+
+
+            <div class="producto">
+
+                <div class="producto__img__container">
+                    
+                    <div class="producto__img">
+                        <img src="../img/Secciones de productos/vestimenta/Prenda2.jpeg" alt="" class="producto__picture">
+                    </div>
+                
+                </div>
+
+                <div class="producto__titulo titulos_subtitulos"><h4 class="producto__titulo__info">Pantalones de Pikachu</h4></div>
+
+                <div class="producto__descripcion textos"><p class="producto__descripcion__info">Peluche de Pikachu original de alta calidad con certificado de auntenticidad. 32x32cm</p></div>
+
+                <hr class="producto__divider">
+
+                <div class="producto__footer">
+
+                    <div class="producto__precio titulos_subtitulos"><p class="producto__precio__info"> <span>$ 123.45 </span></p></div>
+
+                    <a class="btn__añadir__producto add" data-id="22">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                    </a>
+
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="producto">
+
+                <div class="producto__img__container">
+                    
+                    <div class="producto__img">
+                        <img src="../img/Secciones de productos/vestimenta/Prenda3.jpeg" alt="" class="producto__picture">
+                    </div>
+                
+                </div>
+
+                <div class="producto__titulo titulos_subtitulos"><h4 class="producto__titulo__info">Pijama de Pikachu para niño</h4></div>
+
+                <div class="producto__descripcion textos"><p class="producto__descripcion__info">Peluche de Pikachu original de alta calidad con certificado de auntenticidad. 32x32cm</p></div>
+
+                <hr class="producto__divider">
+
+                <div class="producto__footer">
+
+                    <div class="producto__precio titulos_subtitulos"><p class="producto__precio__info"> <span>$ 123.45 </span></p></div>
+
+                    <a class="btn__añadir__producto add" data-id="33">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                    </a>
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="producto">
+
+                <div class="producto__img__container">
+                    
+                    <div class="producto__img">
+                        <img src="../img/Secciones de productos/vestimenta/Prenda4.jpeg" alt="" class="producto__picture">
+                    </div>
+                
+                </div>
+
+                <div class="producto__titulo titulos_subtitulos"><h4 class="producto__titulo__info">Sudadera de Skarizard</h4></div>
+
+                <div class="producto__descripcion textos"><p class="producto__descripcion__info">Peluche de Pikachu original de alta calidad con certificado de auntenticidad. 32x32cm</p></div>
+
+                <hr class="producto__divider">
+
+                <div class="producto__footer">
+
+                    <div class="producto__precio titulos_subtitulos"><p class="producto__precio__info"> <span>$ 123.45 </span></p></div>
+
+                    <a class="btn__añadir__producto add" data-id="44">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                    </a>
+
+                </div>
+            </div>
+
+
+
+            <div class="producto">
+
+                <div class="producto__img__container">
+                    
+                    <div class="producto__img">
+                        <img src="../img/Secciones de productos/vestimenta/Prenda 5.jpeg" alt="" class="producto__picture">
+                    </div>
+                
+                </div>
+
+                <div class="producto__titulo titulos_subtitulos"><h4 class="producto__titulo__info">Conjunto de ropa de Pikachu</h4></div>
+
+                <div class="producto__descripcion textos"><p class="producto__descripcion__info">Peluche de Pikachu original de alta calidad con certificado de auntenticidad. 32x32cm</p></div>
+
+                <hr class="producto__divider">
+
+                <div class="producto__footer">
+
+                    <div class="producto__precio titulos_subtitulos"><p class="producto__precio__info"> <span>$ 123.45 </span></p></div>
+
+                    <a class="btn__añadir__producto add" data-id="55">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                    </a>
+
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="producto">
+
+                <div class="producto__img__container">
+                    
+                    <div class="producto__img">
+                        <img src="../img/Secciones de productos/vestimenta/Prenda6.jpeg" alt="" class="producto__picture">
+                    </div>
+                
+                </div>
+
+                <div class="producto__titulo titulos_subtitulos"><h4 class="producto__titulo__info">Playera y pantalon de Pikachu</h4></div>
+
+                <div class="producto__descripcion textos"><p class="producto__descripcion__info">Peluche de Pikachu original de alta calidad con certificado de auntenticidad. 32x32cm</p></div>
+
+                <hr class="producto__divider">
+
+                <div class="producto__footer">
+
+                    <div class="producto__precio titulos_subtitulos"><p class="producto__precio__info"> <span>$ 123.45 </span></p></div>
+
+                    <a class="btn__añadir__producto add" data-id="66"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+                    </a>
+
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer class="footer">
+
+        <section class="footer__container"> <!--Display grid / 1row /2 col-->
+
+
+            <article class="footer__icons__container">
+
+                <h3 class="footer__icons__titulo titulos_subtitulos">!Conócenos¡</h3>
+
+
+                <i class="fa-brands fa-facebook fa-bounce footer__icon__item"></i>
+
+                <i class="fa-brands fa-whatsapp fa-bounce footer__icon__item"></i>
+
+                <i class="fa-brands fa-instagram fa-bounce footer__icon__item"></i>
+
+                <h4 class="textos leyenda">&copy; Ian Rodrigo López Espinosa - 2023</h4>
+
+            </article>
+
+
+
+            <article class="footer__info__container"> 
+
+                <h3 class="footer__info__titulo titulos_subtitulos">Mundo Pokémon</h3>
+
+
+                <div class="footer__info__links"> 
+
+                    <ul class="footer__info__links__container"> <!--Flex-->
+                        <li> <a href="index.html" class="footer__info__link__item textos" target="_blank">Inicio</a> </li>
+                        <li> <a href="peluches.html" class="footer__info__link__item textos" target="_blank"> Peluches</a> </li>
+                        <li> <a href="ropa.html" class="footer__info__link__item textos" target="_blank"> Ropa</a> </li>
+                        <li> <a href="juegos.html" class="footer__info__link__item textos" target="_blank"> VideoJuegos</a> </li>
+                        <li> <a href="especiales.html" class="footer__info__link__item textos" target="_blank"> Especiales</a> </li>
+                    </ul>
+
+                </div>
+
+
+            </article>
+
+
+        </section>
+
+
+    </footer>
+
+    
+    <!--Importamos biblioteca de íconos -->
+    <script src="https://kit.fontawesome.com/1b597c8904.js" crossorigin="anonymous"></script>
+
+    <!--Importamos nuestro archivo js personalizado-->
+    <script type="module" src="../scripts/index.js"></script>
+
+</body>
+</html>

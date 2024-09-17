@@ -1,0 +1,673 @@
+*{
+    scroll-behavior: smooth;
+}
+
+
+/*Sección de variables*/
+:root{
+    --background: linear-gradient(135deg, #e4e4537e 0%, #a27b4b98 100%);
+    --hover:  #eaa245d2;
+    --bold__info : #FF5733;
+}
+
+
+.titulos_subtitulos{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.textos{
+    font-family: 'Tektur', cursive;
+}
+
+
+
+/*COMENZAMOS POR EL HEADER*/
+/*-----NAV-----*/
+.header__container{
+    color:#fff;
+    height: 100px;
+    background: rgb(2,0,36);
+    padding: 0px 15px;
+    /*Alineamos los elementos en una sola línea*/
+    display: flex;
+
+    /*Damos separación entre elementos en el eje x*/
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.header__logo__container{
+    text-align: justify;
+    max-width: 100%;
+}
+
+.header__logo{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    text-shadow: 0px 2px 3px #fff;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.header__icon__picture{
+    text-align: center;
+    max-width: 48px;
+    margin-left: 10px;
+}
+
+.nav a{
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+/*Mostramos y ocultamos el menú de nuestra nav. */
+.mostrar-menu,
+.ocultar-menu{
+    
+    font-size: 2.5rem; /*40px*/
+    cursor: pointer;
+
+    /*Ocultamos los íconos del meú responsive*/
+    display: none;
+    transition: 0.4s;    
+}
+
+/*--------Damos una peña animación a (.menu a, .show-nav , hide-nav)----------*/
+.nav a:hover,
+.mostrar-menu:hover,
+.ocultar-menu:hover{
+    background: var(--hover);
+    border-radius: 8px;
+}
+
+/*------Movemos al final nuestras barras de nav cuando sea responsive--*/
+.ocultar-menu{
+    order:1;
+}
+/*Ocultamos el cuadro del input (#check)*/
+#check{
+    display: none;
+}
+
+/*--------------Infor del header-------*/
+#header__container__texts{
+    max-width: 100%;
+    padding: 0px 15px;    
+    background-image: var(--background),url(../img/Portada1-img.png);
+    height: 70vh;
+    /* background-position: left center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    background-position: right center;
+    background-attachment: fixed;
+ 
+
+    position: relative;
+    
+}
+
+.header__info{
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.header__titulo{
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: 0px 2px 3px #fff;
+}
+
+.header__subtitulo{
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+
+}
+
+.header__wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+/*=================================================================================*/
+/*=================================================================================*/
+/*=================================================================================*/
+/*=================================================================================*/
+/*=================================================================================*/
+/*--------------------------------------------------------------------------------*/
+/*-----------------info__bienvenida-----------------------*/
+.info__bienvenida__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+    padding: 30px;
+
+}
+
+.info__bienvenida__titulo{
+    color:#a27b4b98;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 0px 2px 3px #a27b4b98;
+
+    animation: bounce 2s ease-in-out infinite; /* 2s es la duración de la animación */
+    animation-delay: 2s; /* 5 segundos de retraso antes de la primera animación */
+    
+}
+
+.info__bienvenida__texto__container{
+    max-width: 100%;
+    overflow: hidden;
+    margin: 15px 15px;
+    text-align: center;
+    
+}
+
+.info__bienvenida__pregunta{
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1.25rem;
+    color: #A04000; /*FFBF00    A04000*/
+    text-align: justify;
+    margin-left: 6.25rem;
+}
+
+.info__bienvenida__texto{
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    padding: 0 100px;
+    
+}
+
+
+
+.info__bienvenida__bold{
+    font-weight: bold;
+    color: #0B0B3B;
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------*/
+/*-----------------Categorias Info--------------------*/
+.categorias__info{
+    max-width: 100%;
+    padding: 30px;
+    margin: 15px 0;
+    overflow: hidden;
+    text-align: center;
+    background: #F2F2F2;
+}
+
+.categorias__info__titulo{
+    font-size: 2rem;
+    color: #F92222;
+    text-shadow: 0px 2px 3px #F92222;
+    text-align: center;
+    margin: 15px 0;
+
+
+    
+}
+
+
+.categorias__info__container__cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}
+
+.categorias__info__card{
+    max-width: 700px;   /*800*/
+    background: #FAFAFA;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1rem;
+    align-self: center;
+    border: 2px solid #000;
+    box-shadow: 2px 1px 6px #000;
+}
+
+.categorias__info__picture{
+    max-width: 100%;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px #FF8000;
+
+
+}
+
+.categorias__info__img{
+    object-fit: cover;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.categorias__info__titulo__producto{
+    margin: 2.5rem 1rem 1rem 1rem;
+    font-size: 1.2rem;
+    color:#FF8000;
+
+    text-shadow: 0px 2px 3px #FF8000;
+
+    animation: bounce 2s ease-in-out infinite; /* 2s es la duración de la animación */
+    animation-delay: 5s; /* 5 segundos de retraso antes de la primera animación */
+}
+
+.categorias__info__descripcion__producto{
+    text-align: center;
+}
+
+.categorias__info__producto__text{
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.categorias__info__seccion{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 15px;
+    max-width: 600px;
+    text-decoration: none;
+    background: #FF8000; /*#FF8000*/ /*rgb(2,0,36)*/
+
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-shadow: 0px 1px 1px #fff;
+    border-radius: 5px;
+
+    transition: 0.4s;
+
+}
+
+.categorias__info__seccion:hover{
+    background: #FAAC58;
+}
+
+
+/*==========================================================*/
+/*==========================================================*/
+/*==========================================================*/
+/*==========================================================*/
+/*==========================================================*/
+/*-------------------------FOOTER---------------------------*/
+.footer{
+    background: rgb(2,0,36);
+    color: #fff;
+    max-width: 100%;
+    padding: 20px 20px;
+}
+
+.footer__container{
+    max-width:100%;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+
+
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr) ;
+    grid-gap: 10px;
+
+    justify-content: center; /*Horizontal x*/
+    align-items: center; /*Vertical y */
+    
+}
+
+
+.footer__icons__container{
+    margin: 10px;
+    padding: 10px;
+    grid-column: 1/2;
+    max-width: 100%;
+}
+
+.footer__icons__titulo{
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0px 1px 2px #fff;
+
+
+}
+
+.footer__icon__item{
+    margin: 10px;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 10px;
+
+    transition: 0.4s;
+    border-radius: 30px;
+
+}
+
+.footer__info__container{
+    margin: 10px;
+    padding: 10px;
+    grid-column: 2/-1;
+}
+
+.footer__info__titulo{
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0px 1px 2px #fff;
+
+}
+
+.footer__info__links{
+    text-align: center;
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.footer__info__links__container{
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.footer__info__links ul{
+    list-style: none;
+}
+
+.footer__info__container a{
+    
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+.footer__info__container a:hover, 
+.footer__icon__item:hover{
+    background: var(--hover);
+    border-radius: 8px;
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+
+/* Animación de rebote */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+
+
+/*=======================================================================================================*/
+/*=======================================================================================================*/
+/*=======================================================================================================*/
+/*=======================================================================================================*/
+/*------------RESPONSIVE-------------*/
+@media screen and (max-width:1120px){
+
+
+        /*------------------Info__bienvenida-------------------*/
+        .info__bienvenida__pregunta{
+            font-size: 1rem;
+        }
+
+        /*----------FOOTER------------------*/
+        .footer__icons__container{
+            grid-row: 1/2;
+            grid-column: 1/-1;
+            max-width: 100%;
+        }    
+    
+        .footer__info__container{
+            grid-row: 2/3;
+            grid-column: 1/-1;
+            max-width: 100%;
+        }
+
+
+
+}
+
+@media screen and (max-width: 900px){
+    
+    /*Barra de navegación*/
+    .mostrar-menu, 
+    .ocultar-menu{
+        display: block;
+        font-size: 60px;
+        
+    }
+
+    .mostrar-menu{
+     
+        margin-left: auto;
+    }
+    
+
+    .nav{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(2,0,36);
+
+
+
+        /*Hacemos que aparezca el menú*/
+        right: -100%;
+        top: 0;
+
+        text-align: center;
+        padding: 85px;
+        z-index: 100;
+        transition: 0.8s;
+
+    }
+
+    /*Aajustamos los enlaces del menú*/
+    .nav a{
+        display: block;
+        padding: 15px;
+    }
+
+    /*Movrmos el símbolo de x arriba a la dedrecha*/
+    .ocultar-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        font-size:3.75rem;
+    }
+
+    /*Comprobamos la activición del check para mostrar y ocultar el menu a través del check*/
+    #check:checked ~  .nav-container  .nav{
+        right: 0;
+    }
+
+    /*--------------Info__bienvenida-----------------*/
+    .info__bienvenida__pregunta{
+
+        font-size: 1rem;
+        text-align: center;
+        margin: 0;
+        padding: 15px;
+
+    }
+
+    /*----------FOOTER------------------*/
+    .footer__icons__container{
+        grid-row: 1/2;
+        grid-column: 1/-1;
+        max-width: 100%;
+    }    
+
+    .footer__info__container{
+        grid-row: 2/3;
+        grid-column: 1/-1;
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    /*====================================*/
+    /*-----Info__bienvenida------------------*/
+    .info__bienvenida__titulo{
+        font-size: 1.8rem;
+    }
+
+    .info__bienvenida__container{
+        margin: 0 7px;
+        padding: 15px;
+    }
+
+    .info__bienvenida__texto__container{
+        margin: 7px 7px;
+        
+    }
+
+    .info__bienvenida__texto{
+        padding: 0 50px;
+    }
+
+
+    /*====================================================*/
+    /*----------Footer-------------*/   
+    .leyenda{
+        font-size: 0.9rem;
+    }
+
+    .footer__info__links__container{
+        flex-direction: column;
+        
+    }
+    .footer__info__container ul li{
+    
+        margin: 15px 0;
+
+    }
+    
+}
+
+@media screen and (max-width:400px){
+    
+    /*------Header-----*/
+    .header__titulo{
+        font-size: 1.8rem;
+        text-align:center;
+    }    
+
+    .header__subtitulo{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+
+
+    /*-------Info__bienvenida-------*/
+    .info__bienvenida__container{
+        padding: 5px;
+    }
+
+    .info__bienvenida__titulo{
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .info__bienvenida__texto{
+        text-align: justify;
+        margin-top: 10px;
+        font-size: 0.9rem;
+        padding: 0 20px;
+    }
+
+    .info__bienvenida__pregunta{
+        font-size: 0.7rem;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    /*====================================================*/
+    /*====================================================*/
+    /*====================================================*/
+    /*====================================================*/
+    /*----------Categorias__info-------------*/
+    .categorias__info__titulo{
+        font-size: 1.6rem;
+    }
+
+    .categorias__info__producto__text{
+        font-size: 0.9rem;
+    }
+
+    .categorias__info__seccion{
+        font-size: 1rem;
+    }
+
+
+    /*====================================================*/
+    /*====================================================*/
+    /*====================================================*/
+    /*====================================================*/
+    /*----------Footer-------------*/   
+    .leyenda{
+        font-size: 0.9rem;
+    }
+
+    .footer__info__links__container{
+        flex-direction: column;
+        
+    }
+    .footer__info__container ul li{
+    
+        margin: 15px 0;
+
+    }
+
+
+}
